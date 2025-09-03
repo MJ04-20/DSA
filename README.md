@@ -1,6 +1,6 @@
 # 📘 My DSA Progress
 
-Tracking my journey in mastering Data Structures and Algorithms 🚀  
+Tracking my journey in DSA  
 
 ---
 
