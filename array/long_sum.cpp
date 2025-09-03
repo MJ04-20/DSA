@@ -32,27 +32,53 @@ int long_sum(vector<int> &nums, int k)
     // return max;
 
     // 2pnt
+    // int n=nums.size();
+    // int l=0,r=0;
+    // int sum=nums[0];
+    // int maxl=0;
+    // while(r<n)
+    // {
+    //     while(l<r && sum>k)
+    //     {
+    //         sum-=nums[l];
+    //         l++;
+    //     }
+    //     if(sum==k)
+    //     {
+    //         if(maxl<(r-l +1 ))
+    //         {
+    //             maxl=r-l+1;
+    //         }
+    //     }
+    //     r++;
+    //     sum+=nums[r];
+
+    // }
+    // return maxl;
+
+    //  Hash Map
+
+    map <int,int> preSum;
     int n=nums.size();
-    int l=0,r=0;
-    int sum=nums[0];
     int maxl=0;
-    while(r<n)
+    int sum=0;
+    for(int i=0;i<n;i++)
     {
-        while(l<r && sum>k)
-        {
-            sum-=nums[l];
-            l++;
-        }
+        sum+=nums[i];
         if(sum==k)
         {
-            if(maxl<(r-l +1 ))
-            {
-                maxl=r-l+1;
-            }
+            maxl=max(maxl,i+1);
         }
-        r++;
-        sum+=nums[r];
-
+        int rem =sum-k;
+        if(preSum.find(rem)!=preSum.end()) // if that sum exisit in map that mesns it is not pointing to the end
+        {
+            int l= i-preSum[rem];
+            maxl=max(l,maxl);
+        }
+        if(preSum.find(sum)==preSum.end())
+        {
+            preSum[sum]=i;   
+        }
     }
     return maxl;
 

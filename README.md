@@ -17,7 +17,7 @@ Tracking my journey in DSA
 - [x] Maximum Consecutive Ones  
 - [x] Number Appearing More Than Once  
 - [x] Longest Subarray with Given Sum  
-- [ ] Longest Subarray with Given Sum including negetive
+- [x] Longest Subarray with Given Sum including negetive
 
 
 ## 📌 Notes
