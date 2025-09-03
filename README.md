@@ -24,3 +24,4 @@ Tracking my journey in DSA
 - ✔ Completed problems are marked with `[x]`  
 - 🔜 Upcoming problems are marked with `[ ]`  
 - I’ll keep updating this README as I progress!  
+- Some questions are not here you can checkout my [LeetCode](https://leetcode.com/u/i5aaU9r6QC/)  for that 
