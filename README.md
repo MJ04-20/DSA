@@ -18,6 +18,7 @@ Tracking my journey in DSA
 - [x] Number Appearing More Than Once  
 - [x] Longest Subarray with Given Sum  
 - [x] Longest Subarray with Given Sum including negetive
+- [x] 2 Sum Problem
 
 
 ## 📌 Notes
